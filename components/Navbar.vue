@@ -22,7 +22,7 @@
         <div class="containor_nav_searchbar">
 
             <form action="submit">
-                <input type="text" placeholder="Search ('/' to focus)">
+                <input id="input" type="text" placeholder="Search ('/' to focus)">
             </form>
         </div>
 
@@ -121,7 +121,7 @@ export default {
     justify-content: center;
     align-items: center;
 }
-input
+#input
 {
     background-color: #d8d8e41f;
     border: none ;

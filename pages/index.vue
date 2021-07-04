@@ -1,6 +1,6 @@
 <template>
 <div class="containor">
-  <Navbar class="nonedi" />
+  <Navbar />
 
   <div class="containor_items">
 
@@ -30,20 +30,38 @@
 
 
   </div>
+
+  <div class="newsletter">
+    <Newsletter/>
+  </div>
+  
+    <div class="footer1">
+      <Footer2 />
+    </div>
+
+   
+  
   
   
   
   </div>  
+ 
 </template>
 
 <script>
+
+import Newsletter from '../components/Newsletter.vue'
 import Navbar from '../components/Navbar.vue'
 import Tutorial from '../components/Tutorial.vue'
+import Footer2 from '../components/Footer2.vue'
 export default {
   components:
   {
     Navbar,
-    Tutorial
+    Tutorial,
+    Newsletter,
+    
+    Footer2
 
   },
   async asyncData ({ $content }) {
@@ -65,6 +83,21 @@ export default {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
+.footer1
+{
+  height: 400px;
+  width: 100%;
+  background-color: red;
+}
+.newsletter 
+{
+  margin-top: 240px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .containor
 {
@@ -76,6 +109,11 @@ export default {
   align-items: center;
   
 
+}
+.navbarcontainor
+{
+  width: 100%;
+  
 }
 
 
@@ -92,6 +130,7 @@ export default {
 .sidebar 
 {
   height: 80vh;
+  
 
   flex: 0.7;
   
@@ -123,8 +162,9 @@ h1
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 13px;
+  padding-left: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   
   height: 4rem;
@@ -136,5 +176,21 @@ h1
 {
     color: #35bb80;
   
+}
+svg
+{
+  height: 60%;
+  width: auto;
+  padding-right: 20px;
+  padding-top: -60px;
+  margin-top: -14px;
+  color: rgba(0, 0, 0, 0.541);
+}
+.h-6
+{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
