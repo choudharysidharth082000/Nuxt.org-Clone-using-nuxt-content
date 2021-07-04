@@ -1,0 +1,140 @@
+<template>
+<div class="containor">
+  <Navbar class="nonedi" />
+
+  <div class="containor_items">
+
+    <div class="sidebar">
+
+      <Tutorial />
+
+    </div>
+    <div class="maincontent">
+
+      <h1>{{page.title}}</h1>
+      <p><nuxt-content :document="page" /></p>
+
+      <div class="csbfilecontainor">
+          <iframe :src="page.csb_link"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="vigilant-leavitt-3264r"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+      </div>
+
+    
+    </div>
+
+
+
+  </div>
+  
+  
+  
+  </div>  
+</template>
+
+<script>
+import Navbar from '../components/Navbar.vue'
+import Tutorial from '../components/Tutorial.vue'
+export default {
+  components:
+  {
+    Navbar,
+    Tutorial
+
+  },
+  async asyncData ({ $content }) {
+    const page = await $content('hello-world').fetch()
+
+    return {
+      page
+    }
+  }
+}
+</script>
+<style>
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.containor
+{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+
+.containor_items 
+{
+  
+  height: 100vh;
+  width: 80%;
+  display: flex;
+
+  
+
+}
+.sidebar 
+{
+  height: 80vh;
+
+  flex: 0.7;
+  
+  
+
+}
+.maincontent
+{
+  flex: 2;
+  padding: 30px;
+  
+}
+.csbfilecontainor{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+ 
+  
+}
+h1
+{
+  
+  color: #2f495ecb;
+  margin-bottom: 20px;
+
+}
+.Learncontainor
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 4rem;
+  width: 100%;
+  background-color: #f7fafc;
+  border-left: 5px solid #cbd5e0;
+}
+.Learncontainor a
+{
+    color: #35bb80;
+  
+}
+</style>
