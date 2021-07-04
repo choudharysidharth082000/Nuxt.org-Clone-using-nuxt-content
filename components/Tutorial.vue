@@ -6,7 +6,7 @@
     <div class="sidebar_containor">
       <h5 class="sideheader">ROUTING</h5>
       <a href="#">Hello World</a>
-      <a href="#">Active Link Class</a>
+      <a href="/activelink">Active Link Class</a>
       <a href="#">Dynamic Pages </a>
       <a href="#">Nested Pages</a>
       

@@ -8,6 +8,7 @@ csb_link: https://codesandbox.io/embed/github/nuxtlabs/examples/tree/master/rout
 ---
 
 <example-intro></example-intro>
+<p>In this example:</p>
 
 `pages/index.vue` and `pages/about.vue` show how Nuxt server renders the page on first load or on hard refresh and renders the page on client side when navigating using the `<NuxtLink>` component.
 

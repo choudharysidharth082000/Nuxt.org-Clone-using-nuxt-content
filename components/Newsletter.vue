@@ -55,7 +55,7 @@ export default {
 input
 {
     background-color: #d8d8e41f;
-    border:1px solid #917a7b ;
+    border:1px solid #917a7b8e ;
     height: 50px;
     width: auto;
     
@@ -68,7 +68,7 @@ input[type = "text"]
     background-color: white;
     
     padding-left: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 ::placeholder {
   color: rgba(2, 23, 24, 0.295);

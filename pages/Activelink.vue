@@ -1,6 +1,6 @@
 <template>
 <div class="containor">
-  <Navbar />
+  <Navbar />  
 
   <div class="containor_items">
 
@@ -65,7 +65,7 @@ export default {
 
   },
   async asyncData ({ $content }) {
-    const page = await $content('hello-world').fetch()
+    const page = await $content('helpers').fetch()
 
     return {
       page
@@ -74,6 +74,7 @@ export default {
 }
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 *
 {
@@ -91,7 +92,7 @@ export default {
 }
 .newsletter 
 {
-  margin-top: 240px;
+  margin-top: 290px;
   width: 100%;
   height: 300px;
   display: flex;
