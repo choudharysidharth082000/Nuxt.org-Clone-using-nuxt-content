@@ -184,6 +184,10 @@ export default {
     
     
 }
+.sidebarcontent::-webkit-scrollbar
+{
+    display: none;
+}
 .sidebarcontent h3
 {
     color: #a4b2c3;
@@ -356,14 +360,7 @@ input[type = "text"]
   {
 display: none ;
   }
-  .hamburger
-  {
-      display: block;
-      margin-top: 50px;
-      margin-left: -10px;
-      cursor: pointer;
-      margin-left: 3px;
-  }
+ 
   .containor_nav_searchbar
   {
       margin-left: -60px;
@@ -372,5 +369,17 @@ display: none ;
 
 
   
+}
+
+@media screen and (max-width: 1202px) {
+     .hamburger
+  {
+      display: block;
+      margin-top: 50px;
+      margin-left: -10px;
+      cursor: pointer;
+      margin-left: 3px;
+  }
+    
 }
 </style>

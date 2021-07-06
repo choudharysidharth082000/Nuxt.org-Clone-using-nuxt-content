@@ -1,6 +1,8 @@
 <template>
 <div class="containor">
-  <Navbar />  
+  <div class="navbarcontainor">
+    <Navbar />
+  </div>  
 
   <div class="containor_items">
 
@@ -99,6 +101,18 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.navbarcontainor
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -70px;
+  
+}
+
+
+
 
 .containor
 {
@@ -147,7 +161,7 @@ export default {
 }
 .csbfilecontainor{
   width: 100%;
-  height: auto;
+  height: 500px;
   object-fit: contain;
   margin-bottom: 30px;
  
@@ -189,13 +203,7 @@ svg
   margin-top: -14px;
   color: rgba(0, 0, 0, 0.541);
 }
-.h-6
-{
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @media screen and (max-width: 1400px){
 
   /* .sidebar{
@@ -209,6 +217,10 @@ svg
   .footer1
   {
     height: 600px;
+  }
+  .newsletter
+  {
+    margin-top: 500px;
   }
   
 }
