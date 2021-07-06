@@ -117,5 +117,12 @@ export default {
     align-items: center;
     flex-direction: column;
 }
+@media screen and (max-width: 1400px){
+
+  .containorfooter{
+    flex-direction:column ;
+  }
+  
+}
 
 </style>

@@ -142,12 +142,14 @@ export default {
 {
   flex: 2;
   padding: 30px;
+  margin-bottom: 100px;
   
 }
 .csbfilecontainor{
   width: 100%;
   height: auto;
   object-fit: contain;
+  margin-bottom: 30px;
  
   
 }
@@ -193,5 +195,28 @@ svg
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1400px){
+
+  /* .sidebar{
+    display: none;
+  } */
+  .maincontent
+  {
+    flex: 1;
+    height: 100%;
+  }
+  .footer1
+  {
+    height: 600px;
+  }
+  
+}
+@media screen and (max-width : 1200px) {
+  .sidebar 
+  {
+    display: none;
+  }
+  
 }
 </style>

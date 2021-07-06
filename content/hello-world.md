@@ -5,6 +5,7 @@ description: Routing with NuxtLink component showing page rendered on server sid
 position: 101
 category: routing
 csb_link: https://codesandbox.io/embed/github/nuxtlabs/examples/tree/master/routing/hello-world?fontsize=14&hidenavigation=1&theme=dark&view=editor
+csb_link2: "https://codesandbox.io/embed/github/nuxtlabs/examples/tree/master/routing/hello-world?fontsize=14&hidenavigation=1&theme=dark"
 ---
 
 <example-intro></example-intro>

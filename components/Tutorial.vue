@@ -5,8 +5,9 @@
     <h4>version <span>2.15.2</span></h4>
     <div class="sidebar_containor">
       <h5 class="sideheader">ROUTING</h5>
-      <a href="#">Hello World</a>
-      <a href="/activelink">Active Link Class</a>
+      <nuxt-link to="/">Hello World</nuxt-link>
+      <!-- <a href="/activelink">Active Link Class</a> -->
+      <nuxt-link to="/activelink">Nuxt Helpers</nuxt-link>
       <a href="#">Dynamic Pages </a>
       <a href="#">Nested Pages</a>
       
@@ -97,12 +98,12 @@
 
   </div>
 </template>
-<script>
+<script scoped>
 export default {
   
 }
 </script>
-<style scoped>
+<style>
 *
 {
   margin: 0;
@@ -190,6 +191,13 @@ span
   display: flex;
   
   align-items: center;
+}
+@media screen and (max-width: 1200px){
+
+  .containor_sidebar{
+    display: none;
+  }
+  
 }
 
 </style>

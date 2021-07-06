@@ -6,7 +6,7 @@
 
                <form id="form" action="submit">
                    <input type="text" placeholder="Email" >
-                   <button id="button">SUBSCRIBE</button>
+                   <button id="button" @click="clicked">SUBSCRIBE</button>
                </form>
                
     </div>
@@ -16,7 +16,7 @@
 <script>
 export default {
     name: 'Newsletter',
-
+   
     
 }
 </script>
@@ -46,6 +46,9 @@ export default {
 .newslettercontent span
 {
     color: #00c58e;
+    font-size: 2.5rem;
+    font-weight: 100;
+
 }
 .newslettercontent blockquote
 {

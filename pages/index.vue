@@ -1,7 +1,15 @@
 <template>
 <div class="containor">
-  <Navbar />
+  <div class="navbarcontainor">
+    <Navbar />
+  </div> 
+  
 
+  <Mobileviewsidebar />
+  
+  
+
+ 
   <div class="containor_items">
 
     <div class="sidebar">
@@ -12,6 +20,7 @@
     <div class="maincontent">
 
       <h1>{{page.title}}</h1>
+      
       <p><nuxt-content :document="page" /></p>
 
       <div class="csbfilecontainor">
@@ -54,6 +63,7 @@ import Newsletter from '../components/Newsletter.vue'
 import Navbar from '../components/Navbar.vue'
 import Tutorial from '../components/Tutorial.vue'
 import Footer2 from '../components/Footer2.vue'
+import Mobileviewsidebar from '../components/Mobileviewsidebar.vue'
 export default {
   components:
   {
@@ -61,7 +71,8 @@ export default {
     Tutorial,
     Newsletter,
     
-    Footer2
+    Footer2,
+    Mobileviewsidebar
 
   },
   async asyncData ({ $content }) {
@@ -70,10 +81,11 @@ export default {
     return {
       page
     }
-  }
+  },
+ 
 }
 </script>
-<style>
+<style scoped>
 
 *
 {
@@ -88,6 +100,24 @@ export default {
   height: 300px;
   width: 100%;
   
+}
+.mobileviewsidebar
+{
+  height: 100vh;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.leftview 
+{
+  height: 100%;
+  width: 100%;
+  background-color: #f8fafc;
+
+
 }
 .newsletter 
 {
@@ -113,6 +143,10 @@ export default {
 .navbarcontainor
 {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -70px;
   
 }
 
@@ -192,5 +226,28 @@ svg
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1400px){
+
+  /* .sidebar{
+    display: none;
+  } */
+  .maincontent
+  {
+    flex: 1;
+  }
+  .footer1
+  {
+    height: 600px;
+  }
+  
+}
+@media screen and (max-width : 1200px) {
+  .sidebar 
+  {
+    display: none;
+  }
+  
 }
 </style>
